@@ -2,7 +2,6 @@ const { default: Image } = require("next/image");
 import { imageData } from "./data/testimonialData";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
 import { useEffect } from "react";
 
 const HomeContainer = () => {
