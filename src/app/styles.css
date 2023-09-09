@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Slab:wght@300&display=swap");
+
+.hero {
+  width: 100vw;
+  background-color: #2c2a2a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero img {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  opacity: 1;
+}
+.hero h3 {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  top: 35%;
+  font-family: "Roboto Slab", serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: red;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+
+.characters-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.single-character {
+  height: 400px;
+  width: 600px;
+  margin-bottom: 25%;
+  border: 1px black solid;
+  border-radius: 2rem;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.single-character img {
+  width: 100%;
+  border: 1px black solid;
+  border-radius: 20px;
+}
+.single-character h2 {
+  color: white;
+  position: absolute;
+  align-items: center;
+  z-index: 99;
+  font-family: "Roboto Slab", serif;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    align-items: center;
+    justify-content: center;
+  }
+  .hero h3 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    top: 35%;
+    font-family: "Roboto Slab", serif;
+  }
+  .characters-container {
+    flex-direction: column;
+    column-gap: 40px;
+  }
+  .single-character {
+    margin-bottom: 30vh;
+    height: 300px;
+    width: 400px;
+    border: 1px black solid;
+    border-radius: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+}
